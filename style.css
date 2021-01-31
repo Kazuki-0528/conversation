@@ -7,23 +7,22 @@
 body {
   display: flex;
   min-height: 100vh;
-  font-family: "Dancing Script", cursive;
+  font-family: "Roboto", sans-serif;
+  background-image: url(img/clay-banks-1KPfcPdbWFM-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main {
   width: 100%;
   margin: 0 auto;
-  background-color: pink;
-  background-image: url(img/undraw_listening_1u79.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 70%;
 }
 
 main > h1 {
   text-align: center;
   font-size: 3rem;
-  color: rgb(252, 8, 8);
+  color: #fff;
   margin-top: 15px;
 }
 
@@ -32,7 +31,7 @@ aside {
   min-width: 250px;
   display: flex;
   flex-direction: column;
-  background-color: rgb(232, 126, 144);
+  background-color: rgba(255, 255, 255, 0.39);
 }
 
 li {
@@ -46,16 +45,11 @@ li > a {
   text-decoration: none;
   color: #fff;
   font-size: 2rem;
-  line-height: 61px;
+  line-height: 63px;
 }
 
 li:hover {
   background-color: rgba(237, 146, 161, 0.705);
-}
-
-div {
-  margin-top: auto;
-  height: 300px;
 }
 
 /* 🍔 */
@@ -94,7 +88,7 @@ input[type="checkbox"] {
     left: -250px;
     height: 100%;
     transition: all 0.2s;
-    background-color: rgb(232, 126, 144);
+    background-color: rgba(255, 255, 255, 0.712);
   }
   input[type="checkbox"]:checked ~ aside {
     left: 0;

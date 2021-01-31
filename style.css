@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Dancing Script", cursive;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  background-color: pink;
+  background-image: url(img/undraw_listening_1u79.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+
+main > h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(252, 8, 8);
+  margin-top: 15px;
+}
+
+aside {
+  width: 25%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(232, 126, 144);
+}
+
+li {
+  list-style: none;
+  height: 70px;
+  text-align: center;
+}
+
+li > a {
+  /* padding: 25px 50px; */
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 61px;
+}
+
+li:hover {
+  background-color: rgba(237, 146, 161, 0.705);
+}
+
+div {
+  margin-top: auto;
+  height: 300px;
+}
+
+/* 🍔 */
+.fas {
+  margin: 10px;
+  font-size: 2rem;
+}
+
+.open,
+.close {
+  display: none;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  left: -50vw;
+}
+
+/* 🍔 */
+
+@media screen and (max-width: 1000px) {
+  main {
+    width: 100%;
+    padding-top: 50px;
+  }
+  /* 🍔 */
+  .open,
+  .close {
+    display: block;
+  }
+  .open {
+    position: absolute;
+  }
+  aside {
+    position: absolute;
+    left: -250px;
+    height: 100%;
+    transition: all 0.2s;
+    background-color: rgb(232, 126, 144);
+  }
+  input[type="checkbox"]:checked ~ aside {
+    left: 0;
+  }
+  input[type="checkbox"]:checked ~ .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8) !important;
+  }
+}

@@ -5,6 +5,10 @@
 }
 
 body {
+  min-height: 100vh;
+}
+
+.body-main {
   display: flex;
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
@@ -13,6 +17,23 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* 共通 */
+.textBoard {
+  background-color: rgba(99, 95, 95, 0.767);
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.textBoard:hover {
+  background-color: rgba(99, 95, 95, 0.651);
+}
+
+/*  */
 
 main {
   width: 100%;
@@ -34,6 +55,17 @@ aside {
   background-color: rgba(255, 255, 255, 0.39);
 }
 
+.footer-div {
+  margin-top: auto;
+  height: 300px;
+}
+
+.footer-div > p {
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
+
 li {
   list-style: none;
   height: 70px;
@@ -41,15 +73,70 @@ li {
 }
 
 li > a {
-  /* padding: 25px 50px; */
+  padding: 25px 25px;
   text-decoration: none;
   color: #fff;
   font-size: 2rem;
-  line-height: 63px;
+  line-height: 65px;
 }
 
 li:hover {
-  background-color: rgba(237, 146, 161, 0.705);
+  background-color: rgba(237, 146, 161, 0.329);
+}
+
+/* Airport */
+.body-airport {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-image: url(img/redcharlie-T1Do6YGPX8A-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Hotel */
+.body-hotel {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-image: url(img/hotel.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Dining */
+.body-dining {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-image: url(img/fran-hogan-BBTHpfv4Qss-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Shopping */
+.body-shopping {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-image: url(img/sangga-rima-roman-selia-RUA9K_rEzq4-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* sightseeing */
+.body-sightseeing {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-image: url(img/gabriella-clare-marino-P7IGEqxzyS0-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* 🍔 */
